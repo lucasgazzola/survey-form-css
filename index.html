@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Encuesta sobre programación</h1>
+        <p id="description">¿Cuál es tu lenguaje de programación preferido?</p>
+    </header>
+    <div class="survey-container">
+        <div class="form-container">
+            <form autocomplete="off" class="survey-form" id="survey-form">
+                <div class="form-group name-container">
+                    <label class="label" id="name-label" for="name">Nombre</label>
+                    <input required class="input-field" id="name" type="text" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group email-container">
+                    <label class="label" id="email-label" for="email">Email</label>
+                    <input required class="input-field" id="email" type="email" placeholder="Ingrese su email">
+                </div>
+                <div class="form-group age-container">
+                    <label  class="label" id="number-label" for="age">Edad</label>
+                    <input class="input-field" id="age" type="number" min="0" max="100" placeholder="N°">
+                </div>
+                <div class="form-group select-container">
+                    <label class="label" id="select-label" for="select">Seleccione la opción que más lo represente</label>
+                    <select required class="select input-field" id="dropdown">
+                        <option disabled selected value>Seleccione una opción</option>
+                        <option>Estudiante</option>
+                        <option>Trabajo Full Time</option>
+                        <option>Aprendiz Full Time</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form-group description-container">
+                    <p class="label description">¿Cómo se describiría?</p>
+                    <label class="description-label">
+                        <input class="option"  name="description" type="radio" value="web">Programador Web
+                    </label>
+                    <label class="description-label">
+                        <input class="option"  name="description" type="radio" value="desktop">Programador desktop
+                    </label>
+                    <label class="description-label">
+                        <input class="option" name="description" type="radio" value="mobile">Programador movil o de apps
+                    </label>
+                </div>
+                <div class="form-group specialization-container">
+                    <p class="label description">¿Cuál es su especialidad?</p>
+                    <label class="specialization-label">
+                        <input class="option" name="specialization" type="radio" value="front-end">FrontEnd
+                    </label>
+                    <label class="specialization-label">
+                        <input class="option" name="specialization" type="radio" value="back-end">BackEnd
+                    </label>
+                    <label class="specialization-label">
+                        <input class="option" name="specialization" type="radio" value="fullstack">FullStack
+                    </label>
+                </div>
+                <div class="form-group languaje-container">
+                    <p class="description label">¿Que lenguajes de programación domina?</p>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="javascript">JavaScript
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox"  value="python">Python
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="java">Java
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="csharp">C#
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox"  value="c++">C/C++
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="go">Go
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="php">PHP
+                    </label>
+                    <label class="lang-label">
+                        <input class="option" type="checkbox" value="r">R
+                    </label>
+                </div>
+                <div class="form-group coments-container">
+                    <label class="txt-area-label label">Agregue los comentarios que desee</label>
+                    <textarea class="input-field text-area" id="comentarios" placeholder="Ingrese los comentarios..."></textarea>
+                    <button class="button-submit" id="submit" type="submit">Enviar</input>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

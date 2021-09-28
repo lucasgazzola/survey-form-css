@@ -1,0 +1,126 @@
+
+.header{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #041b1a;
+    background-image: url(background.jpg);
+    /* https://besthqwallpapers.com/img/original/110274/binary-code-4k-computer-code-programming-zeroes-and-units.jpg */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.survey-container{
+    display: flex;
+    font-size: 22px;
+    text-align: start;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.form-container{
+    margin: auto;
+    justify-self: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+.survey-form{
+    background-image: linear-gradient(to top left, #208d7fcc, #2948ffcc);
+    padding: 28px;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.label{
+    box-sizing: border-box;
+    display: block;
+    font-size: 26px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.input-field{
+    font-size: 14px;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.specialization-label, .lang-label, .description-label{
+    display: block;
+    padding: 5px;
+    margin: 15px
+}
+
+.age-container {
+    padding: 0;
+    width: 60px;
+}
+
+
+
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.option{
+    margin-left: 8px;
+}
+
+.button-submit{
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 45px;
+    background-image: linear-gradient(to top left, #010609, #0d4e4b);
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .1s;
+}
+
+.button-submit:active{
+    transform: translateY(2px)
+}
+
+.button-submit:hover{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left, #010609f6, #0d4e4bf6);
+}
+
+
+.text-area{
+    resize: none;
+    width: 90%;
+    padding: 10px;
+    height: 130px;
+    margin: auto;
+}
